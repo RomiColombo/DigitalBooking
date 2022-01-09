@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Email</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .verificationMain {
+            background-color: #DFE4EA;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkMail {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 270px;
+            width: 500px;
+            background-color: #FFFFFF;
+            border: 1px solid #DFE4EA;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            color: #31363F;
+            font-weight: bold;
+            text-align: center;
+            line-height: 25px;
+            font-size: 16px;
+        }
+
+        .checkMail img {
+            height: 70px;
+        }
+
+        .checkMail h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btnCheckMail {
+            background-color: #F0572D;
+            border-color: transparent;
+            color: white;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+            border: transparent;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            width: 30%;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        @media(max-width: 600px) {
+
+            .checkMail {
+                width: 90%;
+                height: 250px;
+            }
+
+            .checkMail h3 {
+                font-size: 15px;
+            }
+
+            .checkMail p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="verificationMain">
+    <div class="checkMail">
+<!--        <img src="successAdd.png" alt="checksuccess">-->
+        <div>
+            <h3>¡Ya eres parte de la comunidad de DIGIRENT!</h3>
+            <a href="http://digirent.link/" class="btnCheckMail">Ir a DIGIRENT</a>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

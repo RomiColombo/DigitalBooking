@@ -1,0 +1,82 @@
+{
+    "id": 3,
+    "name": "KIA Stinger",
+    "description": "Un diseño deportivo avanzado se debe basar en las proporciones y el equilibro perfectos.El Kia Stinger GT domina este aspecto sin esfuerzo alguno gracias a su gran capó, un voladizo delantero corto, una distancia entre ejes amplia y un habitáculo de baja altura.Las amplias líneas de los laterales convergen para formar una parte posterior estilizada que ofrece una aerodinámica mejorada.Además, las nuevas y ligeras llantas de aleación de 48 cm(19 & quot;) aumentan aún más su estética deportiva. Una importante ventaja de la mayor distancia entre ejes es el espacioso habitáculo.Tú y todos los pasajeros tendréis espacio de sobra en un interior elegante y amplio para relajaros y disfrutar de la carretera.El amplio maletero ofrece 406 litros de espacio de carga.Para colocar artículos más largos o equipaje adicional, con asientos traseros abatibles 60 / 40. ",
+    "features": [{
+            "id": 1,
+            "title": "5",
+            "icon": "fa-solid fa-user"
+        },
+        {
+            "id": 2,
+            "title": "A/C",
+            "icon": "fa-regular fa-snowflake"
+        },
+        {
+            "id": 3,
+            "title": "Bluetooth",
+            "icon": "fa-brands fa-bluetooth"
+        },
+        {
+            "id": 4,
+            "title": "No accesible",
+            "icon": "fa-brands fa-accessible-icon"
+        },
+        {
+            "id": 5,
+            "title": "Km Ilimitado",
+            "icon": "fa-solid fa-gauge-simple"
+        },
+        {
+            "id": 6,
+            "title": "3",
+            "icon": "fa-solid fa-suitcase"
+        },
+        {
+            "id": 7,
+            "title": "Asiento Disponible",
+            "icon": "fa-solid fa-baby"
+        }
+    ],
+    "images": [{
+            "id": 1,
+            "title": "Caja de mandos",
+            "url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-35-prueba-1024x682.jpg"
+        },
+
+        {
+            "id": 2,
+            "title": "Asiento frontal",
+            "url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-39-prueba-1024x683.jpg"
+        },
+
+        {
+            "id": 3,
+            "title": "Vista trasera",
+            "url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-20-prueba-1024x683.jpg"
+        },
+
+        {
+            "id": 4,
+            "title": "Palanca de cambios",
+            "url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-36-prueba-1024x682.jpg"
+
+        },
+        {
+            "id": 5,
+            "title": "Vista lateral",
+            "url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-24-prueba-1024x683.jpg"
+        }
+    ],
+    "category": {
+        "id": 1,
+        "title": "DEPORTIVO",
+        "description": "Minivans are the workhorses of the family-car world, the best at carrying people and cargo in an efficient package. They're called minivans but they are far from mini.",
+        "image": "http://placeimg.com/640/480"
+    },
+    "cities": {
+        "id": 1,
+        "name": "Ciudad Autónoma de Buenos Aires",
+        "countryName": "Argentina"
+    }
+}

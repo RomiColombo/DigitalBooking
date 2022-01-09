@@ -1,0 +1,16 @@
+.pickupPointMap {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.map {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.pickupPointMap p {
+    color: #586174;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 60px;
+}

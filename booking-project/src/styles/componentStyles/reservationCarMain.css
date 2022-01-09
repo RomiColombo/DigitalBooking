@@ -1,0 +1,54 @@
+.reservationCarMain{
+    background-color:#DFE4EA;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.reservationCarTitle{
+    padding-top: 1.5%;
+    padding-bottom: 0.7%;
+    font-size: 18px;
+}
+
+.reservationCar{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-right: 1.5%;
+    color:#31363F;
+}
+
+@media(max-width:768px){
+    
+    .reservationCar{
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .descriptionTittle {
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+
+    .descriptionTittle h1{
+        font-size: 20px;
+    }
+
+    .previousPage img{
+        width: 70%;
+    }
+
+    .reservationCar{
+        display: block;
+    }
+
+    .calendarResponsiveReservation{
+        display: block;
+    }
+
+    .calendarDesktopReservation{
+        display: none;
+    }
+
+}

@@ -1,0 +1,235 @@
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #dfe4eabe;
+    height: 88vh;
+}
+
+.formUser{
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.formTitle{
+    color: #F0572D;
+}
+
+.formUser p{
+    font-size: 12px;
+    line-height: 32px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.formUser input{
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border:transparent;
+    margin-bottom: 1.5em;
+    padding-left: 4%;
+}
+
+.linkForm{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #F0572D;
+}
+
+.formFooter{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Clase en observación */
+
+.buttonForm{
+    background: #F0572D;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12));
+    border: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    padding: 7px;
+    width: 200px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.containerName{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerName label{
+    width: 49%;
+}
+
+.errorReservation {
+    color: #B00020 !important;
+    background-color: #fd5f5f46 !important;
+    border-radius: 8px;
+    width: 500px !important;
+    height: 60px !important;
+    display:none;
+    overflow: hidden;
+    transition: all 200ms ease;
+    margin-bottom: 3%;
+}
+
+.errorMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.errorMessage small{
+    font-weight: 400 !important;
+    font-size: 15px !important;
+}
+
+.errorMessage i{
+    font-size: 26px !important;
+    margin-right: 2%;
+}
+
+.controlRequirements.errorReservation{
+    display: block;
+}
+
+/* --------------------------- Responsive Cellphone --------------------------- */
+
+@media (max-width: 600px) {
+
+    /* --------------------------- Login --------------------------- */
+    .formUser{
+        height: 90%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .formUser input{
+        width: 100%;
+    }
+    
+    .mainForm{
+        height: 87vh;
+    }
+
+    .formTitle{
+        padding-bottom: 100px;
+    }
+
+    .buttonForm{
+        width: 100%;
+    }
+
+    /* --------------------------- Singup --------------------------- */
+    .singupTitle{
+        padding-bottom: 0;
+    }
+
+    .formUserSingup{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .singup input{
+        margin-bottom: 0em;
+    }
+
+    .containerName{
+        display: block;
+    }
+}
+
+/* ------------------------------- Validation ------------------------------- */
+.controlRequirements{
+    margin-top: -14px;
+    overflow: hidden;
+    transition: all 200ms ease;
+    padding: 0 9px;
+    color: #FF0000;
+    width: 100%;
+    display:none;
+    text-align: left;
+}
+
+.controlRequirements small{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.controlRequirements.error{
+    display: block;
+}
+
+
+@media (max-width: 768px){
+     /* --------------------------- Login --------------------------- */
+     .formUser{
+        height: 80%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formUser input{
+        width: 100%;
+    }
+    
+    .mainForm{
+        height: 87vh;
+    }
+
+    .formTitle{
+        padding-bottom: 20px;
+    }
+
+    .buttonForm{
+        width: 100%;
+    }
+
+    /* --------------------------- Singup --------------------------- */
+    .singupTitle{
+        padding-bottom: 0;
+    }
+
+    .formUserSingup{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .singup input{
+        margin-bottom: 0em;
+    }
+
+    .containerName{
+        display: block;
+    }
+}
+

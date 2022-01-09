@@ -1,0 +1,8 @@
+.socialMedia_group {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 15px;
+    color: var(--color-text);
+    width: 100px;
+}

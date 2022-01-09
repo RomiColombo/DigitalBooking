@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif;">
+<section class="main" style="color: #31363F;">
+    <section class="reservationSuccessEmail" style="background-color:#f0572d; height:17vh; display:flex; align-content: center; justify-content: center; align-items: center;">
+        <h3 style="color: #DFE4EA; font-weight:bold; font-size:25px; letter-spacing: 2px;">¡Tu reserva se generó con éxito!</h3>
+    </section>
+    <section class="bodyMailContainer" style="padding-top: 3%; padding-bottom: 3%; background-color: #dfe4eabd;">
+        <h4 style="line-height: 40px; padding-left: 25px;">¡Hola <b th:text="${firstName}">Romina</b>!</h4>
+        <div style="padding-left: 25px;">
+            <p style="font-size: 14px;">Muchas gracias por elegir DIGIRENT
+                <br>
+                <br>
+                Recordá que el vehículo estará disponible para retirar treinta minutos antes de la hora
+                seleccionada. A continuación te dejamos algunas cosas a tener en cuenta:
+            </p>
+        </div>
+        <div style="padding-left: 25px;">
+            <table style="width: 100%; border-collapse: separate;">
+                <tbody class="table">
+                <tr>
+                    <td class="infoColumn" style="width: 90%; font-size: 14px;">
+                        <p class="infoTittle" style="text-transform: uppercase; line-height: 30px; font-weight: 800;">Documentos</p>
+                        <p>En el momento de retirar el vehículo, deberás presentar la siguiente documentación:
+                        </p>
+                        <ul style="list-style: none;">
+                            <li>
+                                DNI o Pasaporte
+                            </li>
+                            <li>
+                                Licencia de conducir válida para el tiempo de alquiler
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="infoColumn" style="width: 90%; font-size: 14px;">
+                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">Número de Reserva</p>
+                        <p th:text="${idReserva}"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="infoColumn">
+                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">A nombre de</p>
+                        <p th:text="${firstName}"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="infoColumn" style="width: 90%; font-size: 14px;">
+                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">Fecha Retiro</p>
+                        <p th:text="${#temporals.format(startDate, 'dd/MMM/yyyy')}"></p>
+                    </td>
+                </tr>
+<!--                <tr>-->
+<!--                    <td class="infoColumn" style="width: 90%; font-size: 14px;">-->
+<!--                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">Hora Retiro</p>-->
+<!--                        <p th:text="${#temporals.format(reservationHour, ':MM')}"></p>-->
+<!--                    </td>-->
+<!--                </tr>-->
+
+                <tr>
+                    <td class="infoColumn" style="width: 90%; font-size: 14px;">
+                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">Fecha Devolución</p>
+                        <p th:text="${#temporals.format(endDate, 'dd/MMM/yyyy')}"></p>
+                    </td>
+                </tr>
+<!--                <tr>-->
+<!--                    <td class="infoColumn" style="width: 90%; font-size: 14px;">-->
+<!--                        <p class="infoTittle" style="text-transform: uppercase; font-weight: 800;">Lugar de Retiro</p>-->
+<!--                        <p th:text="${pickupPoint}"></p>-->
+<!--                    </td>-->
+<!--                </tr>-->
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+</section>
+<section class="footer" style="background-color: #31363F; height: 100px; padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+    <div class="footerTop" style="margin-bottom: 3%;">
+        <h4 style="font-size: 12px; color: #DFE4EA;">DIGIRENT</h4>
+        <p style="font-size: 12px; color: #DFE4EA;">No dejes para mañana el viaje que puedes hacer hoy</p>
+    </div>
+</section>
+</body>

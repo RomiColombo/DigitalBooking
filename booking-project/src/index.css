@@ -1,0 +1,43 @@
+/* configuration */
+
+@import url('./styles/bases/settings.css');
+@import url('./styles/bases/variables.css');
+@import url('./styles/bases/colors.css');
+@import url('./styles/bases/base.css');
+
+/* components */
+
+@import url('./styles/componentStyles/buttons.css');
+@import url('./styles/componentStyles/link.css');
+@import url('./styles/componentStyles/card.css');
+@import url('./styles/componentStyles/navbar.css');
+@import url('./styles/componentStyles/userLog.css');
+@import url('./styles/componentStyles/main.css');
+@import url('./styles/componentStyles/form.css');
+@import url('./styles/componentStyles/search.css');
+@import url('./styles/componentStyles/category.css');
+@import url('./styles/componentStyles/socialMedia.css');
+@import url('./styles/componentStyles/footer.css');
+@import url('./styles/componentStyles/calendar.css');
+@import url('./styles/componentStyles/carDetails.css');
+@import url('./styles/componentStyles/carPhotos.css');
+@import url('./styles/componentStyles/carDescription.css');
+@import url('./styles/componentStyles/carServices.css');
+@import url('./styles/componentStyles/pickupPoint.css');
+@import url('./styles/componentStyles/carReservation.css');
+@import url('./styles/componentStyles/policies.css');
+
+@import url("./styles/componentStyles/header.css");
+@import url("./styles/componentStyles/reservationCarLeft.css");
+@import url("./styles/componentStyles/reservationCarMain.css");
+@import url("./styles/componentStyles/reservationCarRight.css");
+@import url("./styles/componentStyles/successReservation.css");
+
+@import url("./styles/componentStyles/deleteBtn.css");
+@import url("./styles/componentStyles/headerAddProduct.css");
+@import url("./styles/componentStyles/formAddProduct.css");
+@import url("./styles/componentStyles/successAdd.css");
+@import url("./styles/componentStyles/confirmMail.css");
+
+@import url("./styles/componentStyles/profilePage.css");
+@import url("./styles/componentStyles/noReservation.css");

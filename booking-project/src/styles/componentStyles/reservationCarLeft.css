@@ -1,0 +1,199 @@
+/* ------------------------------- FORMULARIO_Persona ------------------------------- */
+
+.reservartionCarPerson{
+    background-color:#FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-left: 1.5%;
+    padding-bottom: 1%;
+    width: 95%;
+    height: 210px;
+}
+
+.reservartionCarPerson p{
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.reservartionCarPerson input{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: transparent;
+    width: 90%;
+    height: 40px;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+.reservartionCarPerson input::placeholder{
+    color: #273347;
+}
+
+
+.reservartionCarPerson input:disabled{
+    background: #DFE4EA;
+    opacity: 0.6;
+}
+
+/* ------------------------------- FORMULARIO_Fecha------------------------------- */
+
+.reservationCarDate h3{
+    padding-top: 3%;
+    padding-bottom: 0.7%;
+    font-weight: bold;
+    font-size: 18px;
+    color:#31363F;
+}
+
+.reservartionCarDate{
+    width: 95%;
+}
+
+.reservationCarDateCalendar{
+    width: 95%;
+    height: 200px;
+}
+
+.calendarDesktopReservation{
+    width: 95%;
+}
+
+.calendarResponsiveReservation{
+    display: none;
+}
+
+/* ------------------------------- FORMULARIO_Hora------------------------------- */
+.reservationCarTime h3{
+    padding-top: 3%;
+    padding-bottom: 0.7%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reservationCarTime div{
+    background-color:#FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1%;
+    width: 95%;
+    height: 140px;
+}
+
+.fa-check-circle{
+    padding-right: 0.5em;
+    font-size:22px;
+}
+
+.reservationCarTimeInfo{
+    font-size: 14px;
+    line-height:28px;
+    font-weight: bold;
+}
+
+.reservationCarTimeSelect{
+    font-size: 13px;
+    line-height:26px;
+    font-weight: bold;
+}
+
+.reservationCarTime select{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: transparent;
+    height: 40px;
+    width: 50%;
+}
+
+.reservationCarTime option{
+    font-size: 13px;
+    font-weight: bold;
+    color:#31363F;
+}
+
+.reservationCarTime option:default{
+    color: #273347;
+}
+
+.requiredText{
+    color:#31363F;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+@media(max-width:768px){
+    
+    .reservartionCarPerson, .reservationCarTime div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .reservartionCarPerson {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height: 300px;
+        width: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .reservationCarTitle, .reservationCarDate h3, .reservationCarTime h3 {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    }
+
+    .reservartionCarPerson label{
+       width: 95%;
+    }
+
+    .reservartionCarPerson input{
+        width: 100%;
+    }
+
+    .reservationCarTime div{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .reservationCarTime span{
+        display: flex;
+        align-items: center;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .reservationCarTime select{
+        width: 95%;
+    }
+
+    .reservationCarTimeInfo{
+        line-height: 14px;
+        font-size: 12px;
+    }
+
+    .reservationCarTimeSelect{
+        width: 100%;
+        font-size: 11px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+}

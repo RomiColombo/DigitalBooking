@@ -1,0 +1,80 @@
+/* Se utilizaron important porque cuando se realiza el deploy en aws deja de reconocer estos estilos, si bien no es el uso 
+adecuado de los important es la solución temporal que hallamos hasta resolver el problema de fondo*/
+
+.rmdp-wrapper,
+.rmdp-calendar {
+    width: 100% !important;
+}
+
+.rmdp-wrapper {
+    z-index: 0 !important;
+}
+
+.rmdp-day-picker {
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+}
+
+.rmdp-week-day {
+    color: #31363F !important;
+    font-weight: bold !important;
+}
+
+.rmdp-arrow {
+    border: solid #F0572D !important;
+    border-width: 0 2px 2px 0 !important;
+}
+
+.rmdp-arrow-container:hover {
+    background-color: #F0572D !important;
+    box-shadow: 0 0 3px #ad9387 !important;
+}
+
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+    background-color: #f0572dd3 !important;
+    color: #fff !important;
+}
+
+.rmdp-day.rmdp-today span {
+    background-color: #31363F !important;
+}
+
+.rmdp-range {
+    background-color: #F0572D !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 0px #F0572D !important;
+}
+
+.rmdp-header-values {
+    color: #191B1D !important;
+    margin: auto !important;
+    font-weight: bold !important;
+}
+
+.rmdp-day-picker .rmdp-week .rmdp-day {
+    margin: 5px !important;
+}
+
+.rmdp-container {
+    border-radius: 5px !important;
+    border: transparent !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%) !important;
+}
+
+.rmdp-input {
+    border: transparent !important;
+    height: 40px !important;
+    padding: 2px 5px !important;
+}
+
+.rmdp-input:focus {
+    border: transparent !important;
+    box-shadow: 0 0 0px #a4b3c5 !important;
+    outline: none !important;
+}
+
+.swal2-title{
+    font-size: 14px !important;
+}

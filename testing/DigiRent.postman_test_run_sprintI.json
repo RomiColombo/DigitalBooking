@@ -1,0 +1,465 @@
+{
+	"id": "84cd04bf-3960-4817-8af4-dcbe97c98ce4",
+	"name": "DigiRent",
+	"timestamp": "2021-10-28T22:29:15.954Z",
+	"collection_id": "16580577-9874a0ab-bf1b-4299-980f-f2809734ac59",
+	"folder_id": "16580577-9ac4e865-d6e2-4c03-8693-97384290c67f",
+	"environment_id": "27ea65f5-828c-4397-a15c-aa891dea456d",
+	"totalPass": 37,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3a0c844a-c8c2-491d-b4d9-3d248add4c6b",
+			"name": "FirstPost",
+			"url": "http://localhost:8080//categories",
+			"time": 252,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 252ms": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 252ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				252
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 252ms": true
+				}
+			]
+		},
+		{
+			"id": "3c4b6d77-ad3c-4818-af9c-3b30a5ca5652",
+			"name": "PostRandom",
+			"url": "http://localhost:8080//categories",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 20ms": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 20ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 20ms": true
+				}
+			]
+		},
+		{
+			"id": "dfb8f122-0a3a-43c5-9d0b-47afac52463d",
+			"name": "PostRandom2",
+			"url": "http://localhost:8080//categories",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 18ms": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 18ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 18ms": true
+				}
+			]
+		},
+		{
+			"id": "7ca4de9c-1a44-44c4-992c-84d87c029ee8",
+			"name": "Get Categories",
+			"url": "http://localhost:8080//categories",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 10ms": true,
+				"Content-Type esta presente en el Header": true,
+				"El campo Title es de tipo string": true,
+				"El campo Title no es de tipo number": true,
+				"El campo Description es de tipo string": true,
+				"El campo Description no es de tipo number": true,
+				"El campo Image es de tipo String": true,
+				"El campo Image no es de tipo number": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 10ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type esta presente en el Header": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Title es de tipo string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Title no es de tipo number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Description es de tipo string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Description no es de tipo number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Image es de tipo String": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Image no es de tipo number": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 10ms": true,
+					"Content-Type esta presente en el Header": true,
+					"El campo Title es de tipo string": true,
+					"El campo Title no es de tipo number": true,
+					"El campo Description es de tipo string": true,
+					"El campo Description no es de tipo number": true,
+					"El campo Image es de tipo String": true,
+					"El campo Image no es de tipo number": true
+				}
+			]
+		},
+		{
+			"id": "e8abfbd9-6cd6-4788-b148-1e08151ca5c7",
+			"name": "Test Category by ID",
+			"url": "http://localhost:8080//categories/1",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 17ms": true,
+				"El titulo contiene la palabra AUTO DE CIUDAD": true,
+				"El campo Description corresponde con la descripcion suministrada": true,
+				"El campo Imagen contienen la URL dada": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 17ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El titulo contiene la palabra AUTO DE CIUDAD": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Description corresponde con la descripcion suministrada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El campo Imagen contienen la URL dada": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 17ms": true,
+					"El titulo contiene la palabra AUTO DE CIUDAD": true,
+					"El campo Description corresponde con la descripcion suministrada": true,
+					"El campo Imagen contienen la URL dada": true
+				}
+			]
+		},
+		{
+			"id": "7b9c4cc7-b689-454a-9317-def1e037af0b",
+			"name": "Delete by ID",
+			"url": "http://localhost:8080//categories/1",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"El tiempo de respuesta es 16ms": true,
+				"Date esta presente en el Header": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 16ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Date esta presente en el Header": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"El tiempo de respuesta es 16ms": true,
+					"Date esta presente en el Header": true
+				}
+			]
+		},
+		{
+			"id": "72d176af-f0fd-40b6-832b-9078fb7dd79d",
+			"name": "Deleted by ID",
+			"url": "http://localhost:8080//categories/1",
+			"time": 9,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El código de respuesta es 400 Bad Request": true,
+				"El tiempo de respuesta es 9ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 9ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 400 Bad Request": true,
+					"El tiempo de respuesta es 9ms": true
+				}
+			]
+		},
+		{
+			"id": "c6bd5cbe-1a42-4ec3-a8d1-a10d3b014bc0",
+			"name": "Update by ID",
+			"url": "http://localhost:8080//categories/2",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 17ms": true
+			},
+			"testPassFailCounts": {
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 17ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 17ms": true
+				}
+			]
+		},
+		{
+			"id": "07652084-0433-4bb8-81f9-8b6e27135028",
+			"name": "Updated by ID",
+			"url": "http://localhost:8080//categories/2",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"La Categoría 2 contiene la palabra 'Updated Truck Test' indicando se que actualizó": true,
+				"Código de respuesta es 200 OK": true,
+				"Código de respuesta no es 404 Not Found": true,
+				"El tiempo de respuesta es 7ms": true
+			},
+			"testPassFailCounts": {
+				"La Categoría 2 contiene la palabra 'Updated Truck Test' indicando se que actualizó": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta es 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Código de respuesta no es 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El tiempo de respuesta es 7ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"La Categoría 2 contiene la palabra 'Updated Truck Test' indicando se que actualizó": true,
+					"Código de respuesta es 200 OK": true,
+					"Código de respuesta no es 404 Not Found": true,
+					"El tiempo de respuesta es 7ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 366,
+	"collection": {
+		"requests": [
+			{
+				"id": "3a0c844a-c8c2-491d-b4d9-3d248add4c6b",
+				"method": "POST"
+			},
+			{
+				"id": "3c4b6d77-ad3c-4818-af9c-3b30a5ca5652",
+				"method": "POST"
+			},
+			{
+				"id": "dfb8f122-0a3a-43c5-9d0b-47afac52463d",
+				"method": "POST"
+			},
+			{
+				"id": "7ca4de9c-1a44-44c4-992c-84d87c029ee8",
+				"method": "GET"
+			},
+			{
+				"id": "e8abfbd9-6cd6-4788-b148-1e08151ca5c7",
+				"method": "GET"
+			},
+			{
+				"id": "7b9c4cc7-b689-454a-9317-def1e037af0b",
+				"method": "DELETE"
+			},
+			{
+				"id": "72d176af-f0fd-40b6-832b-9078fb7dd79d",
+				"method": "GET"
+			},
+			{
+				"id": "c6bd5cbe-1a42-4ec3-a8d1-a10d3b014bc0",
+				"method": "PUT"
+			},
+			{
+				"id": "07652084-0433-4bb8-81f9-8b6e27135028",
+				"method": "GET"
+			}
+		]
+	}
+}

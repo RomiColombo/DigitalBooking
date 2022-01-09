@@ -1,0 +1,150 @@
+.headerProfile{
+    background-color: #31363F;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerProfile h1{
+    font-size: 22px;
+    font-weight: normal;
+    margin-left: 1.5%;
+    color: white;
+}
+
+.previousPageProfile{
+    margin-right: 1.5%;
+}
+
+.backBtn{
+    color: white;
+    font-size: 22px;
+}
+
+.backBtn:hover{
+    color: #838383;
+}
+
+.userTrips{
+    background-color: #DFE4EA;
+}
+
+.userTrips h2{
+    padding: 1.5%;
+}
+
+.tripsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding-left: 1.5%; */
+    padding-right: 1.5%;
+}
+
+.tripDetails{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    height: 25vh;
+}
+
+.tripDetailsContent{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tripCardBody{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imgCarProfile{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.carCategoryTrip{
+    color: lightgray;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.carTittleTrip{
+    font-size: 15px;
+    color:#31363F;
+    font-weight: bold;
+}
+
+.tripDatePlace{
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tripDatePlace p{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+    color: #31363F;
+}
+
+.btnCancelReservation{
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    width: 30%;
+}
+
+.btnCancelReservation i{
+    color:#F0572D;
+}
+
+.btnCancelReservation:hover{
+    color: #F0572D;
+}
+
+.fa-ban{
+    padding-right: 2%;
+}
+
+.tripDetailsContent hr{
+background-color: lightgray;
+}
+
+.containerImgProfileUser{
+    height: 25vh;
+}
+
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+@media(max-width: 768px) {
+    .btnCancelReservation {
+        width: 60%;
+    }    
+
+}
+
+@media (max-width:600px) {
+
+    .tripsContainer{
+        display: block;
+    }
+
+    .btnCancelReservation {
+        width: 70%;
+    }
+}

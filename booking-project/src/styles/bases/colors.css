@@ -1,0 +1,9 @@
+:root {
+    --color-text: rgb(255, 255, 255);
+    --color-background: #ffffff;
+    --color-primary: #F0572D;
+    --color-secondary: #31363F;
+    --color-secondary-dark: #191B1D;
+    --color-primary-hover: rgba(102, 51, 153, 0.404);
+    --color-smoke: grey;
+  }

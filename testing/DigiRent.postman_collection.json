@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "9874a0ab-bf1b-4299-980f-f2809734ac59",
+		"name": "DigiRent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "FirstPost",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"AUTO DE CIUDAD\",\r\n    \"description\": \"Minivans are the workhorses of the family-car world, the best at carrying people and cargo in an efficient package. They're called minivans but they are far from mini.\",\r\n    \"image\": \"http://placeimg.com/640/480\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostRandom",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"{{vehicle}}\",\r\n    \"description\": \"{{description}}\",\r\n    \"image\": \"{{$randomImageUrl}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostRandom2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"{{vehicle}}\",\r\n    \"description\": \"{{description}}\",\r\n    \"image\": \"{{$randomImageUrl}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Categories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type esta presente en el Header\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Title es de tipo string\", function () {\r",
+									"    pm.expect('title').to.be.a('string');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Title no es de tipo number\", function () {\r",
+									"    pm.expect('title').to.not.be.a('number');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Description es de tipo string\", function () {\r",
+									"    pm.expect('description').to.be.a('string');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Description no es de tipo number\", function () {\r",
+									"    pm.expect('description').to.not.be.a('number');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Image es de tipo String\", function () {\r",
+									"    pm.expect('image').to.be.a(\"string\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Image no es de tipo number\", function () {\r",
+									"    pm.expect('image').to.not.be.a('number');\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Category by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El titulo contiene la palabra AUTO DE CIUDAD\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.title).to.eql(\"AUTO DE CIUDAD\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Description corresponde con la descripcion suministrada\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.description).to.eql(\"Minivans are the workhorses of the family-car world, the best at carrying people and cargo in an efficient package. They're called minivans but they are far from mini.\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El campo Imagen contienen la URL dada\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.image).to.eql(\"http://placeimg.com/640/480\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories/{{id1}}",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories",
+								"{{id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Date esta presente en el Header\", function () {\r",
+									"    pm.response.to.have.header(\"Date\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories/{{id1}}",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories",
+								"{{id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleted by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"El código de respuesta es \"  + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories/{{id1}}",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories",
+								"{{id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Updated Truck Test\",\r\n    \"description\": \"This truck has been updated\",\r\n    \"image\": \"http:urlactualizada.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories/{{id2}}",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories",
+								"{{id2}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updated by ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"La Categoría 2 contiene la palabra 'Updated Truck Test' indicando se que actualizó\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.title).to.eql(\"Updated Truck Test\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta es \" + pm.response.code + \" \" + pm.response.status, function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Código de respuesta no es 404 Not Found\", function () {\r",
+									"    pm.response.to.not.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El tiempo de respuesta es \" + responseTime + \"ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/categories/{{id2}}",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"categories",
+								"{{id2}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"const Categories = [",
+							"    {",
+							"        title: \"FAMILIAR\",",
+							"        description: \"A sedan has four doors and a traditional trunk. Like vehicles in many categories, they're available in a range of sizes from small.\"",
+							"    },",
+							"    {",
+							"        title: \"TODOTERRENO\",",
+							"        description: \"These are the sportiest, hottest, coolest-looking coupes and convertibles—low to the ground, sleek, and often expensive.\"",
+							"    },",
+							"    {",
+							"        title: \"DEPORTIVO\",",
+							"        description: \"Does the roof retract into the body leaving the passenger cabin open to the elements? If so, it's a convertible.\"",
+							"    }",
+							"]",
+							"",
+							"randomCategory = Categories[Math.floor(Math.random()*Categories.length)];",
+							"",
+							"pm.globals.set(\"vehicle\", randomCategory.title);",
+							"pm.globals.set(\"description\", randomCategory.description);"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}

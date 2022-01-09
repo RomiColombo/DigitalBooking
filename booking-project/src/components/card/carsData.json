@@ -1,0 +1,57 @@
+[{
+        "img_url": "https://www.diariomotor.com/imagenes/2017/11/kia-stinger-2018-20-prueba-1024x683.jpg",
+        "category": "Deportivo",
+        "title": "KIA Stinger",
+        "location": "Ciudad Autónoma de Buenos Aires",
+        "description": "Un diseño deportivo avanzado se debe basar en las proporciones y el equilibro perfectos."
+    },
+    {
+        "img_url": "https://i.ebayimg.com/images/g/hm0AAOSw1HVe57JV/s-l640.jpg",
+        "category": "Auto de Ciudad",
+        "title": "Gran Auto de Ciudad",
+        "location": "Buenos Aires",
+        "description": "Beatae magnam or aspernatur. Ullam mollit and omnis velit. Amet ipsum but labore."
+    },
+    {
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZ3JZm0F8-pNQ-BiFIilR58Tlv7wOFlMciS7L7MfYRkynSF9ekENCeFR7ffMWpILmLOA&usqp=CAU",
+        "category": "Familiar",
+        "title": "Sedan Modesto",
+        "location": "Cali",
+        "description": "Rem sed ipsum so eiusmod iure so fugit. Eos nisi. Fugit ad. Doloremque exercitationem, quaerat for modi nostrum unde."
+    },
+    {
+        "img_url": "https://i0.wp.com/www.climatescorecard.org/wp-content/uploads/2020/07/India-29.png?w=750&ssl=1",
+        "category": "Familiar",
+        "title": "Sedan Deluxe",
+        "location": "Buenos Aires",
+        "description": "Velit quo. Quaerat adipisci. Sed consequuntur fugit, elit. Sint sit, nisi so labore. Elit."
+    },
+    {
+        "img_url": "https://suafinanca.com.br/wp-content/uploads/2021/10/pexels-alexgtacar-1592384-300x300.jpg",
+        "category": "Deportivo",
+        "title": "Deportivo Alpino",
+        "location": "Bogotá",
+        "description": "Anim omnis, exercitationem. Enim commodi yet commodi yet adipisicing. Nihil consectetur yet unde."
+    },
+    {
+        "img_url": "https://www.mavment.com/blog/wp-content/uploads/2021/08/porsche-912-1024x683.jpg",
+        "category": "Auto de Ciudad",
+        "title": "Auto de Ciudad",
+        "location": "Buenos Aires",
+        "description": "Fugiat. Quis explicabo iure omnis. Quis labore so incididunt ipsam autem. In modi or magna"
+    },
+    {
+        "img_url": "https://www.bestdoubledinheadunit.net/wp-content/uploads/2019/07/4k-wallpaper-automobile-automotive-1149137-copy-200x200.jpg",
+        "category": "Todoterreno mixto",
+        "title": "4x4",
+        "location": "Cali",
+        "description": "Minim minima. Nulla dicta so laboriosam officia, so cillum dolor, si. Molestiae aliquam."
+    },
+    {
+        "img_url": "https://evse.com.au/wp-content/uploads/range-rover-1-1024x576-1.jpg",
+        "category": "Todoterreno mixto",
+        "title": "Crossover",
+        "location": "Buenos Aires",
+        "description": "Unde aliqua and minim but totam. Nostrum molestiae but fugit or amet. Exercitation quisquam tempora."
+    }
+]

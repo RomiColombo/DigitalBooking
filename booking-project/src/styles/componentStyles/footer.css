@@ -1,0 +1,32 @@
+.footer{
+    background-color: var(--color-primary);
+    bottom: 0px;
+    color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    left: 0px;
+    position: sticky;
+    width: 100%;
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+.footerSlogan{
+    font-style: italic;
+}
+
+@media (max-width: 600px){
+    
+    .footer{
+        justify-content: flex-start;
+    }
+    .footer div{
+        display: none;
+    }
+
+    .footerSlogan{
+        display: none;
+    }
+}

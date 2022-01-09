@@ -1,0 +1,169 @@
+.description {
+    background-color: var(--color-secondary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriptionTittle {
+    margin-left: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.descriptionTittle p {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.descriptionTittle h1 {
+    font-size: 22px;
+}
+
+.previousPage {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1.5%;
+}
+
+.backBtn{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.backBtn:hover{
+    color: #838383;
+}
+
+.description {
+    background-color: #31363F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.descriptionTittle {
+    margin-left: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.descriptionTittle p {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.descriptionTittle h1 {
+    font-size: 22px;
+}
+
+.previousPage {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1.5%;
+}
+
+.locationContainer {
+    background-color: #DFE4EA;
+    color: #31363F;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.carLocation {
+    margin-left: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: bold;
+    width: 300px;
+
+}
+
+.distance{
+    margin-left: 7.5%;
+}
+
+.location__icon {
+    font-size: 1em;
+    margin-right: 3%;
+    color: #31363fe7;
+}
+
+.punctuationContainer {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: flex-end;
+    padding-right: 1.5%;
+}
+
+.punctuationLeft {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.punctuationLeft p {
+    font-weight: bold;
+    color: #31363F;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.punctuationLeft i {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.activeCar {
+    color: #F0572D;
+}
+
+.unactiveCar {
+    color: #838383;
+}
+
+.punctuationRight {
+    padding: 7px 12px;
+    /* top, right, bottom, left */
+    background-color: #31363F;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .punctuationLeft i {
+        font-size: 8px;
+        margin-left: 1.5px;
+    }
+
+    .punctuationLeft p{
+        font-size: 11px;
+        line-height: 8px;
+    }
+
+    .punctuationContainer{
+        justify-content: flex-end;
+    }
+
+    .carLocation{
+        width: 70%;
+    }
+
+    .distance{
+        display:none;
+    }
+
+    .carLocation div{
+        display: flex;
+        align-items: center;
+    }
+}

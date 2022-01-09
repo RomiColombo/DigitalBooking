@@ -1,0 +1,179 @@
+/* ------------------------------- FORMULARIO_Detalle------------------------------- */
+
+.reservationCarRight{
+    background-color:#FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    width: 95%;
+}
+
+.reservationDetail h3{
+    padding-left: 4%;
+    padding-bottom: 0.7%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height:60px;
+
+}
+.reservationDetailImg{
+    height:300px;
+    width:100%;
+    object-fit: cover;
+}
+
+.reservationDetailInfo{
+    margin-left: 4%;
+    margin-top: 7%;
+    margin-bottom: 8.5%;
+}
+
+.reservationCarTipe{
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.reservationDetailInfo h2{
+    font-size: 20px;
+    padding-left: 0;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.icoCarsPunctuation{
+    font-size: 12px;
+    margin-right: 1%;
+}
+
+.activeCar{
+    color: #F0572D;
+}
+
+.unactiveCar{
+    color: #838383;
+}
+
+.reservationDetailLocation{
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 0.5em;
+}
+
+.reservationLocationIco{
+    padding-right:0.5em;
+
+}
+
+.pickupDate{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.formLine{
+    border: 1px solid #BEBEBE;  
+}
+
+.pickupDateInput{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirmReservationButton{
+    margin-top:10%;
+    margin-bottom: 3%;
+    background-color: #F0572D;
+    border-color: transparent;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    border: transparent;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formReservationFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 150px;
+}
+
+.formReservationFooter p{
+    font-size: 12px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    
+    .reservationCarRight{
+        width: 100%;
+    }
+
+    .reservationCarRight{
+        margin-top: 7%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2%;
+        margin-bottom: 5%;
+    }
+
+    .reservationCarRight img{
+        border-radius: 8px;
+        margin-left: 3%;
+    }
+
+    .reservationResponsive{
+        margin-right: 3%;
+        margin-top: 12%;
+    }
+
+    .confirmReservationButton{
+        margin-top: 2%;
+    }
+
+    .pickupDateInput{
+        height: 50px;
+    }
+
+    .calendarDesktopReservation {
+        width: 100%;
+    }
+
+    .formReservationFooter {
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    .reservationCarRight{
+        display: block;
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .pickupDateInput label{
+        font-size: 14px;
+    }
+
+    .reservationCarRight img{
+        border-radius: 0px;
+        margin-left: 0;
+        
+    }
+
+    .formReservationFooter p{
+        display: none;
+    }
+
+}

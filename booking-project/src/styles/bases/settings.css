@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-primary);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background:inset transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 40px;
+  }

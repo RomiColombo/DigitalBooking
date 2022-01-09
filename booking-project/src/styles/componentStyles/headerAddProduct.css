@@ -1,0 +1,30 @@
+.headerAdmin{
+    background-color: #31363F;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerAdmin h1{
+    font-size: 22px;
+    font-weight: normal;
+    margin-left: 1.5%;
+    color: white;
+}
+
+.previousPage{
+    margin-right: 1.5%;
+}
+
+.mainAdmin{
+    background-color:#dfe4eabe;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.mainAdmin h2{
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    font-size: 22px;
+}

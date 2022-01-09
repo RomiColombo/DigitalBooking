@@ -1,0 +1,17 @@
+.main__container{
+    align-content: center;
+    background-color: #31363F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+.main__content {
+    height: 300px;
+    width: 300px;
+    margin: 0px auto;
+}

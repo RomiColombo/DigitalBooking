@@ -1,0 +1,277 @@
+/* ----------------------------- Caracteristicas ---------------------------- */
+
+.formAdmin{
+    background: #FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 5%;
+}
+.carAdminInfo{
+    margin-top: 1.5%;
+}
+.carAdminDetails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.carAdminDetails div{
+    margin-bottom: 3%;
+}
+
+.carAdminInfo label{
+    display: block;
+    font-size: 13px;
+    line-height:30px;
+    font-weight: bold;
+}
+
+.carAdminInfo input, .carAdminInfo select{
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: transparent;
+    font-weight: 500;
+    height: 40px;
+    padding-left: 1%;
+}
+
+.textArea{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.carAdminInfo input::placeholder{ 
+    color: #BEBEBE;
+}
+
+/* -------------------------------- Atributos ------------------------------- */
+
+.atributesAdmin{
+    margin-top: 1%;
+}
+
+.atributesAdmin h3{
+    line-height: 50px;
+}
+
+.newAtribute, .atributeAdd{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    gap: 2%;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #dfe4eaa8;
+    border-radius: 5px;
+    height: 12vh;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.newAtributeContainer, .atributeAddContainer{
+    display: grid;
+    grid-template-columns: 75% 23%;
+    gap: 2%;
+}
+
+.atributesAdmin label{
+    display: block;
+    font-size: 13px;
+    line-height:30px;
+    font-weight: bold;
+}
+
+.atributesAdmin input{
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: transparent;
+    font-weight: 500;
+    height: 40px;
+    padding-left: 1%;
+}
+
+.btnAddCarAdmin{
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+}
+
+/* -------------------------------- Policies -------------------------------- */
+.adminPolicies h3{
+    line-height: 50px;
+}
+
+.adminPolicies label{
+    display: block;
+    font-size: 13px;
+    line-height:30px;
+    font-weight: bold;
+}
+
+.policiesAdminContainer{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    padding: 1% 1.5% 1.5% 1.5%
+}
+
+.policiesAdminContainer h4{
+    font-size: 15px;
+    line-height:35px;
+    color:#191B1D;
+}
+.policiesAdminContainer ul{
+    list-style: none;
+}
+
+/* ----------------------------- Cargar imagenes ---------------------------- */
+.addImagesAdmin{
+    padding-top: 1%;
+}
+
+.addImagesAdmin h3{
+    line-height: 50px;
+}
+
+
+.addImagesAdmin div{
+    display: grid;
+    grid-template-columns: 95% 3%;
+    gap: 2%;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #dfe4eaa8;
+    border-radius: 5px;
+    height: 100px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+
+}
+
+.addImagesAdmin input{
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: transparent;
+    font-weight: 500;
+    height: 40px;
+    padding-left: 1%;
+}
+
+.btnAddCarImg{
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+/* ------------------------------ Boton enviar ------------------------------ */
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    margin-top:4%;
+    margin-bottom: 3%;
+}
+
+.sendFormAdmin{
+    background-color: #F0572D;
+    border-color: transparent;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    border: transparent;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    width: 20%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+@media(max-width: 768px) {
+
+    .newAtribute, .atributeAdd{
+        grid-template-columns: 90% 5%;
+        height: 30vh;
+    }
+
+    .newAtributeContainer, .atributeAddContainer{
+        display: block;
+    }
+
+    .policiesAdminContainer{
+        display: block;
+    }
+
+    .policiesAdminContainer h4{
+        line-height:30px;
+    }
+
+    .policiesAdminContainer .textArea{
+        margin-bottom: 2%;
+    }
+
+    .addImagesAdmin div{
+        grid-template-columns: 90% 3%;
+    }
+
+    .sendFormAdmin{
+        width: 40%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .formAdmin{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .carAdminDetails{
+        display: block;
+        margin-top: 8%;
+    }
+
+    .newAtribute, .atributeAdd{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .newAtributeContainer, .atributeAddContainer{
+        width:80%;
+    }
+
+    .newAtributeContainer div, .atributeAddContainer div{
+        margin-bottom: 10%;
+    }
+
+    .policiesAdminContainer{
+        box-shadow: none;
+    }
+
+    .addImagesAdmin div{
+        display: flex;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .delete-btn, .btnAddCarAdmin{
+        margin-top:0;
+    }
+}

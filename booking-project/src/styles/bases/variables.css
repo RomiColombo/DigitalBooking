@@ -1,0 +1,9 @@
+:root {
+    /* padding dimensions */
+    --padding-h-mobile: 10px;
+    --padding-h-tablet: 30px;
+    --padding-h-desktop: 40px;
+    --padding-v-mobile: 15px;
+    --padding-v-tablet: 20px;
+    --padding-v-desktop: 12px;
+}

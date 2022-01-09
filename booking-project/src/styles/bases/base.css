@@ -1,0 +1,97 @@
+html, body{
+    height: 100vh;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.mb-1{
+    margin-bottom: 5px;
+}
+
+.mb-2{
+    margin-bottom: 10px;
+}
+
+.mb-5{
+    margin-bottom: 20px;
+}
+
+.ml-1 {
+    margin-left: 5px;
+}
+
+.ml-2 {
+    margin-left: 10px;
+}
+
+.ml-5 {
+    margin-left: 20px;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.mr-2 {
+    margin-right: 10px;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.ml-2-d{
+    margin-left: 10px;   
+}
+
+h1{
+    font-weight:bold;
+    font-size: 24px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.none{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .ml-2-d{
+        margin-left: 0px;   
+    }   
+
+    html, body {
+        width: 100vw;
+    }
+}

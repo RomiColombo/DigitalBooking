@@ -1,0 +1,45 @@
+.carServicesTittle {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.carServicesTittle h2,
+.pickupPointTittle h2,
+.institutionalPoliciesTittle h2,
+.availableDates h2 {
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 1.5%;
+    color: #31363F;
+    font-weight: bold;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #F0572D;
+}
+
+.carServicesIcons {
+    margin-left: 1.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.carServicesIcons i {
+    color: #F0572D;
+    padding-right: 3%;
+}
+
+.carServicesIcons p {
+    color: #586174;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 8%;
+}
+
+@media (max-width: 768px) {
+    .carServicesIcons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
